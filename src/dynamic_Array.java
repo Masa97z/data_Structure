@@ -1,21 +1,22 @@
 import java.util.Arrays;
 
-public class dynamic_Array {
-    int[] data;
-    int size;
+public class dynamic_Array <T> {
+    Object[] data; //create normal array
+    int size; // size of array
 
+    //constant of array
     public dynamic_Array() {
         size = 0;
-        data = new int[1];
+        data = new Object[1];
     }
 
     public int getSize() {
         return data.length;
     }
-
-    public int get(int index){
+//get lenght of array
+    public T get(int index){
         // get index of array
-        return data[index];
+        return (T) data[index];
     }
     public void insert(int elemnt){
         // put elemnt in data array
