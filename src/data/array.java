@@ -1,6 +1,8 @@
+package data;
+
 public class array {
     public static void main(String[] args) {
-        //One dimension array
+        //One dimension data.array
         int data[] = new int[5];
         data[0]=1;
         data[1]=2;

@@ -12,13 +12,15 @@ public class LinkList {
         head = newNode;
     }
     public void delete(){
+        //delete elemnt
         head = head.next;
     }
     public void display(){
-        Node n = head;
-        while (n!=null){
-            System.out.print(n.value + "\t->");
-            n = n.next ;
+        //show elemnt
+        Node data = head;
+        while (data !=null){
+            System.out.print(data.value + "\t->");
+            data = data.next ;
         }
     }
 
